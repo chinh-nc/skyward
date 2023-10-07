@@ -9595,6 +9595,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 16px;
   padding: 24px;
   margin: 0 16px;
+  max-width: 94%;
 }
 .reviews .review .review-user-img {
   width: 80px;
