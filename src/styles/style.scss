@@ -17,6 +17,14 @@ $font-family-sans-serif: 'Inter', sans-serif;
   }
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+
 .custom-input {
   border-radius: 37px;
   background-color: rgba($color: #fff, $alpha: .4);
@@ -49,6 +57,7 @@ $font-family-sans-serif: 'Inter', sans-serif;
   min-height: 100vh;
   max-width: 100%;
   overflow: hidden;
+  margin-top: 84px;
 
   @include mb() {
     img {
@@ -150,6 +159,10 @@ $font-family-sans-serif: 'Inter', sans-serif;
 
   @include mb() {
     margin-top: 40px;
+  }
+
+  .splide__track {
+    min-width: 100%;
   }
 }
 
@@ -440,11 +453,12 @@ $font-family-sans-serif: 'Inter', sans-serif;
 }
 
 .reviews {
+  margin: 0 auto;
+
   .review {
     border-radius: 16px;
     padding: 24px;
     margin: 0 16px;
-    max-width: 94%;
 
     .review-user-img {
       width: 80px;

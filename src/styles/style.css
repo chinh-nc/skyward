@@ -9190,6 +9190,14 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+
 .custom-input {
   border-radius: 37px;
   background-color: rgba(255, 255, 255, 0.4);
@@ -9222,6 +9230,7 @@ a.text-dark:hover, a.text-dark:focus {
   min-height: 100vh;
   max-width: 100%;
   overflow: hidden;
+  margin-top: 84px;
 }
 @media (max-width: 968px) {
   .banner-section img {
@@ -9327,6 +9336,9 @@ a.text-dark:hover, a.text-dark:focus {
   .core-values {
     margin-top: 40px;
   }
+}
+.core-values .splide__track {
+  min-width: 100%;
 }
 
 .introduce-imgs {
@@ -9591,11 +9603,13 @@ a.text-dark:hover, a.text-dark:focus {
   height: 100%;
 }
 
+.reviews {
+  margin: 0 auto;
+}
 .reviews .review {
   border-radius: 16px;
   padding: 24px;
   margin: 0 16px;
-  max-width: 94%;
 }
 .reviews .review .review-user-img {
   width: 80px;

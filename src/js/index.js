@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "loop",
     perPage: 4,
     focus: 0,
+    autoplay: true,
+    lazyLoad: false,
     breakpoints: {
       1062: {
         perPage: 3,
@@ -25,13 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
     perPage: 3,
     focus: 0,
     updateOnMove: true,
-    direction: "rtl",
     breakpoints: {
       1062: {
         perPage: 2,
       },
       767: {
         perPage: 3,
+      },
+      576: {
+        perPage: 2,
       },
     },
   }).mount();
