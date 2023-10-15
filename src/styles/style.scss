@@ -25,6 +25,9 @@ $font-family-sans-serif: 'Inter', sans-serif;
   width: 100%;
 }
 
+.btn-primary-shadow {
+  box-shadow: 0px 32px 38px 0px rgba(0, 65, 232, 0.20);
+}
 .custom-input {
   border-radius: 37px;
   background-color: rgba($color: #fff, $alpha: .4);
@@ -565,5 +568,17 @@ $font-family-sans-serif: 'Inter', sans-serif;
         }
       }
     }
+  }
+}
+
+.recruitment-container {
+  margin-top: 180px;
+
+  .list-group {
+    color: #969696;
+  }
+
+  .send-to-skyward {
+    border-radius: 20px;
   }
 }
