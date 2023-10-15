@@ -1,5 +1,6 @@
 AOS.init({
   offset: 100,
+  once: true,
 });
 
 
