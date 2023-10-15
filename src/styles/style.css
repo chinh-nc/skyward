@@ -9706,4 +9706,23 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .recruitment-container .send-to-skyward {
   border-radius: 20px;
+}
+
+.margin-header {
+  margin-top: 84px;
+}
+
+.recruitment-banner {
+  max-height: 100vh;
+  overflow: hidden;
+}
+.recruitment-banner img {
+  height: 100%;
+}
+.recruitment-banner .recruitment-banner-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -582,3 +582,23 @@ $font-family-sans-serif: 'Inter', sans-serif;
     border-radius: 20px;
   }
 }
+.margin-header {
+  margin-top: 84px;
+}
+
+.recruitment-banner {
+  max-height: 100vh;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+  }
+
+  .recruitment-banner-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+  }
+}
