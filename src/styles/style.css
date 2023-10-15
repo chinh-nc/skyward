@@ -9504,6 +9504,10 @@ a.text-dark:hover, a.text-dark:focus {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
   width: 100%;
   padding: 26px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 @media (max-width: 968px) {
   .leaders-imgs .leader-img .leader-info {
@@ -9528,6 +9532,18 @@ a.text-dark:hover, a.text-dark:focus {
   .leaders-imgs .leader-img .leader-info .position {
     font-size: 16px;
   }
+}
+.leaders-imgs .leader-img .introduce {
+  flex-grow: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.24s;
+}
+.leaders-imgs .leader-img:hover .introduce {
+  flex-grow: 1;
+}
+.leaders-imgs .leader-img:hover .leader-info {
+  background: rgba(0, 0, 0, 0.8);
 }
 .leaders-imgs.grid-2 {
   grid-template-columns: repeat(2, 1fr);

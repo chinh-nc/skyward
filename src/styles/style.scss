@@ -347,6 +347,10 @@ $font-family-sans-serif: 'Inter', sans-serif;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
       width: 100%;
       padding: 26px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
 
       @include mb() {
         padding: 16px;
@@ -369,6 +373,23 @@ $font-family-sans-serif: 'Inter', sans-serif;
         @include mb() {
           font-size: 16px;
         }
+      }
+    }
+
+    .introduce {
+      flex-grow: 0;
+      height: 0;
+      overflow: hidden;
+      transition: .24s;
+    }
+
+    &:hover {
+      .introduce {
+        flex-grow: 1;
+      }
+
+      .leader-info {
+        background: rgba(0, 0, 0, 0.8);
       }
     }
   }
