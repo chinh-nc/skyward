@@ -9,7 +9,9 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/assets/libs/aos/aos.css">
-    <link rel="stylesheet" href="src/assets/libs/splide-4.1.3/splide.min.css">
+    <link rel="stylesheet" href="src/assets/libs/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="src/assets/libs/slick-1.8.1/slick-theme.css">
+    <!-- <link rel="stylesheet" href="src/assets/libs/splide-4.1.3/splide.min.css"> -->
     <link rel="stylesheet" href="src/styles/style.css" />
 </head>
 
@@ -307,37 +309,37 @@
         <section class="container core-values pt-5">
             <div class="row align-items-center">
                 <div class="col-12 col-md-6 order-2 order-md-1 splide mt-5 mt-md-0" id="products">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide product-img">
+                    <div class="custom-slick px-3">
+                        <div class="product-list" dir="rtl">
+                            <div class="splide__slide product-img">
                                 <img src="src/assets/images/products/product_0.png" alt="">
                                 <div class="product-detail">
                                     <p class="mb-0">01</p>
                                     <h3>Mặt đá</h3>
                                 </div>
-                            </li>
-                            <li class="splide__slide product-img">
-                                <img src="src/assets/images/products/product_1.png" alt="">
-                                <div class="product-detail">
-                                    <p class="mb-0">02</p>
-                                    <h3>Mặt đá</h3>
-                                </div>
-                            </li>
-                            <li class="splide__slide product-img">
-                                <img src="src/assets/images/products/product_2.png" alt="">
-                                <div class="product-detail">
-                                    <p class="mb-0">03</p>
-                                    <h3>Mặt đá</h3>
-                                </div>
-                            </li>
-                            <li class="splide__slide product-img">
+                            </div>
+                            <div class="splide__slide product-img">
                                 <img src="src/assets/images/products/product_2.png" alt="">
                                 <div class="product-detail">
                                     <p class="mb-0">04</p>
                                     <h3>Mặt đá</h3>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="splide__slide product-img">
+                                <img src="src/assets/images/products/product_1.png" alt="">
+                                <div class="product-detail">
+                                    <p class="mb-0">02</p>
+                                    <h3>Mặt đá</h3>
+                                </div>
+                            </div>
+                            <div class="splide__slide product-img">
+                                <img src="src/assets/images/products/product_2.png" alt="">
+                                <div class="product-detail">
+                                    <p class="mb-0">03</p>
+                                    <h3>Mặt đá</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-1 order-md-2">
@@ -653,23 +655,23 @@
             <h2 class="introduce-title font-weight-bold mb-3 mb-md-5">
                 Phát triển công ty và phát triển bản thân
             </h2>
-            <div class="reviews splide" id="reviews">
-                <div class="splide__track w-100">
-                    <div class="splide__list">
+            <div class="reviews" id="reviews">
+                <div class="custom-slick px-4 w-100">
+                    <div class="reviews-list">
                         <div class="review border splide__slide border-primary">
                             <div class="review-user-img">
                                 <img src="src/assets/images/user.png" alt="">
                             </div>
                             <p class="font-weight-bold text-primary mb-0">User Name</p>
                             <p class="text-primary mb-2">Truyền thông nội bộ</p>
-                            <!-- <p>
+                            <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has
                                 been.Lorem Ipsum is simply
                                 dummy text of the printing and typesetting industry. Lorem Ipsum has been.Lorem Ipsum is
                                 simply
                                 dummy text of the
-                            </p> -->
+                            </p>
                         </div>
                         <div class="review border splide__slide border-primary">
                             <div class="review-user-img">
@@ -677,14 +679,14 @@
                             </div>
                             <p class="font-weight-bold text-primary mb-0">User Name</p>
                             <p class="text-primary mb-2">Truyền thông nội bộ</p>
-                            <!-- <p>
+                            <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has
                                 been.Lorem Ipsum is simply
                                 dummy text of the printing and typesetting industry. Lorem Ipsum has been.Lorem Ipsum is
                                 simply
                                 dummy text of the
-                            </p> -->
+                            </p>
                         </div>
                         <div class="review border splide__slide border-primary">
                             <div class="review-user-img">
@@ -692,14 +694,14 @@
                             </div>
                             <p class="font-weight-bold text-primary mb-0">User Name</p>
                             <p class="text-primary mb-2">Truyền thông nội bộ</p>
-                            <!-- <p>
+                            <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has
                                 been.Lorem Ipsum is simply
                                 dummy text of the printing and typesetting industry. Lorem Ipsum has been.Lorem Ipsum is
                                 simply
                                 dummy text of the
-                            </p> -->
+                            </p>
                         </div>
                         <div class="review border splide__slide border-primary">
                             <div class="review-user-img">
@@ -707,14 +709,14 @@
                             </div>
                             <p class="font-weight-bold text-primary mb-0">User Name</p>
                             <p class="text-primary mb-2">Truyền thông nội bộ</p>
-                            <!-- <p>
+                            <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has
                                 been.Lorem Ipsum is simply
                                 dummy text of the printing and typesetting industry. Lorem Ipsum has been.Lorem Ipsum is
                                 simply
                                 dummy text of the
-                            </p> -->
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -770,7 +772,8 @@
     <script src="src/assets/libs/jquery-3.7.2/jquery.min.js"></script>
     <script src="src/assets/libs/bootstrap-4.6.2/js/bootstrap.js"></script>
     <script src="src/assets/libs/aos/aos.js"></script>
-    <script src="src/assets/libs/splide-4.1.3/splide.min.js"></script>
+    <script src="src/assets/libs/slick-1.8.1/slick.min.js"></script>
+    <!-- <script src="src/assets/libs/splide-4.1.3/splide.min.js"></script> -->
     <script src="src/js/index.js"></script>
 </body>
 

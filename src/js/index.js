@@ -4,39 +4,59 @@ AOS.init({
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#reviews", {
-    type: "loop",
-    perPage: 4,
-    focus: 0,
+  $('.product-list').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
     autoplay: true,
-    lazyLoad: false,
-    breakpoints: {
-      1062: {
-        perPage: 3,
+    arrows: false,
+    rtl: true,
+    responsive: [
+      {
+        breakpoint: 1262,
+        settings: {
+          slidesToShow: 2,
+        }
       },
-      768: {
-        perPage: 2,
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+        }
       },
-      567: {
-        perPage: 1,
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+  $('.reviews-list').slick({
+    infinite: true,
+    rtl: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1062,
+        settings: {
+          slidesToShow: 2,
+        }
       },
-    },
-  }).mount();
-  new Splide("#products", {
-    type: "loop",
-    perPage: 3,
-    focus: 0,
-    updateOnMove: true,
-    breakpoints: {
-      1062: {
-        perPage: 2,
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+        }
       },
-      767: {
-        perPage: 3,
-      },
-      576: {
-        perPage: 2,
-      },
-    },
-  }).mount();
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 });

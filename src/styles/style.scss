@@ -500,7 +500,9 @@ $font-family-sans-serif: 'Inter', sans-serif;
     transition: .24;
   }
 
-  &.is-active {
+  &.slick-current {
+    transition: .24;
+
     img {
       height: 100%;
     }
@@ -519,4 +521,28 @@ $font-family-sans-serif: 'Inter', sans-serif;
 
 .footer {
   margin-top: 200px;
+}
+
+.custom-slick {
+  .slick-arrow {
+    &::before {
+      color: map-get($map: $theme-colors, $key: "primary");
+    }
+  }
+
+  .slick-dots {
+    li {
+      button:before {
+        font-size: 11px;
+      }
+
+      &.slick-active {
+        button:before {
+          color: map-get($map: $theme-colors, $key: "primary");
+          border: 1px solid map-get($map: $theme-colors, $key: "primary");
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }
